@@ -10,6 +10,9 @@
 		3664488716FF714100DC9C00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664488616FF714100DC9C00 /* Foundation.framework */; };
 		3664489816FF716100DC9C00 /* FLOAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3664489516FF716100DC9C00 /* FLOAlert.m */; };
 		3664489916FF716100DC9C00 /* FLOStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3664489716FF716100DC9C00 /* FLOStoryboardViewController.m */; };
+		3664489C16FF742200DC9C00 /* FLOStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3664489B16FF742200DC9C00 /* FLOStoreManager.m */; };
+		366448A116FF747B00DC9C00 /* FLOKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3664489E16FF747B00DC9C00 /* FLOKeychain.m */; };
+		366448A216FF747B00DC9C00 /* FLOUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 366448A016FF747B00DC9C00 /* FLOUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,12 @@
 		3664489516FF716100DC9C00 /* FLOAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLOAlert.m; sourceTree = SOURCE_ROOT; };
 		3664489616FF716100DC9C00 /* FLOStoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FLOStoryboardViewController.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		3664489716FF716100DC9C00 /* FLOStoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FLOStoryboardViewController.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3664489A16FF742200DC9C00 /* FLOStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLOStoreManager.h; sourceTree = SOURCE_ROOT; };
+		3664489B16FF742200DC9C00 /* FLOStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLOStoreManager.m; sourceTree = SOURCE_ROOT; };
+		3664489D16FF747B00DC9C00 /* FLOKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLOKeychain.h; sourceTree = SOURCE_ROOT; };
+		3664489E16FF747B00DC9C00 /* FLOKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLOKeychain.m; sourceTree = SOURCE_ROOT; };
+		3664489F16FF747B00DC9C00 /* FLOUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLOUtil.h; sourceTree = SOURCE_ROOT; };
+		366448A016FF747B00DC9C00 /* FLOUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLOUtil.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +87,12 @@
 				3664489516FF716100DC9C00 /* FLOAlert.m */,
 				3664489616FF716100DC9C00 /* FLOStoryboardViewController.h */,
 				3664489716FF716100DC9C00 /* FLOStoryboardViewController.m */,
+				3664489A16FF742200DC9C00 /* FLOStoreManager.h */,
+				3664489B16FF742200DC9C00 /* FLOStoreManager.m */,
+				3664489D16FF747B00DC9C00 /* FLOKeychain.h */,
+				3664489E16FF747B00DC9C00 /* FLOKeychain.m */,
+				3664489F16FF747B00DC9C00 /* FLOUtil.h */,
+				366448A016FF747B00DC9C00 /* FLOUtil.m */,
 				3664488916FF714100DC9C00 /* Supporting Files */,
 			);
 			path = FLSOpenLibrary;
@@ -144,6 +159,9 @@
 			files = (
 				3664489816FF716100DC9C00 /* FLOAlert.m in Sources */,
 				3664489916FF716100DC9C00 /* FLOStoryboardViewController.m in Sources */,
+				3664489C16FF742200DC9C00 /* FLOStoreManager.m in Sources */,
+				366448A116FF747B00DC9C00 /* FLOKeychain.m in Sources */,
+				366448A216FF747B00DC9C00 /* FLOUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
