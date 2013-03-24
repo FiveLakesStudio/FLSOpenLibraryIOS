@@ -13,6 +13,7 @@
 		3664489C16FF742200DC9C00 /* FLOStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3664489B16FF742200DC9C00 /* FLOStoreManager.m */; };
 		366448A116FF747B00DC9C00 /* FLOKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3664489E16FF747B00DC9C00 /* FLOKeychain.m */; };
 		366448A216FF747B00DC9C00 /* FLOUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 366448A016FF747B00DC9C00 /* FLOUtil.m */; };
+		366448A516FF7DD100DC9C00 /* FLOStoreManager+Consumable.m in Sources */ = {isa = PBXBuildFile; fileRef = 366448A416FF7DD100DC9C00 /* FLOStoreManager+Consumable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,8 @@
 		3664489E16FF747B00DC9C00 /* FLOKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLOKeychain.m; sourceTree = SOURCE_ROOT; };
 		3664489F16FF747B00DC9C00 /* FLOUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLOUtil.h; sourceTree = SOURCE_ROOT; };
 		366448A016FF747B00DC9C00 /* FLOUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLOUtil.m; sourceTree = SOURCE_ROOT; };
+		366448A316FF7DD100DC9C00 /* FLOStoreManager+Consumable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FLOStoreManager+Consumable.h"; sourceTree = SOURCE_ROOT; };
+		366448A416FF7DD100DC9C00 /* FLOStoreManager+Consumable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FLOStoreManager+Consumable.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				3664489716FF716100DC9C00 /* FLOStoryboardViewController.m */,
 				3664489A16FF742200DC9C00 /* FLOStoreManager.h */,
 				3664489B16FF742200DC9C00 /* FLOStoreManager.m */,
+				366448A316FF7DD100DC9C00 /* FLOStoreManager+Consumable.h */,
+				366448A416FF7DD100DC9C00 /* FLOStoreManager+Consumable.m */,
 				3664489D16FF747B00DC9C00 /* FLOKeychain.h */,
 				3664489E16FF747B00DC9C00 /* FLOKeychain.m */,
 				3664489F16FF747B00DC9C00 /* FLOUtil.h */,
@@ -162,6 +167,7 @@
 				3664489C16FF742200DC9C00 /* FLOStoreManager.m in Sources */,
 				366448A116FF747B00DC9C00 /* FLOKeychain.m in Sources */,
 				366448A216FF747B00DC9C00 /* FLOUtil.m in Sources */,
+				366448A516FF7DD100DC9C00 /* FLOStoreManager+Consumable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +270,7 @@
 				3664489316FF714100DC9C00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
