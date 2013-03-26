@@ -32,8 +32,21 @@
 #define kStoreKeyPrefix	@"StoreFeatureId_"
 
 
+// The following can be placed in the PCH to use the STORE simulation when using the iOS Simulator
+//
+//#if TARGET_IPHONE_SIMULATOR
+//   #define ENABLE_STORE_SIMULATION 1
+//#endif
+
+
+#ifndef ENABLE_STORE_SIMULATION
+    #define ENABLE_STORE_SIMULATION 0
+#endif
+
+
+
 // If we use the simulator we just save the setting in the local cache (no keychain)
-#if TARGET_IPHONE_SIMULATOR
+#if ENABLE_STORE_SIMULATION
 #warning iPhone SKStoreManager not supported on the simulator
 #endif
 
@@ -74,7 +87,7 @@ static FLOStoreManager *_defaultStoreManager = nil;
         _featureIdProcessingPurchaseList = [[NSMutableSet alloc] init];
         _productDict                     = [[NSMutableDictionary alloc] init];
 		
-		#if !TARGET_IPHONE_SIMULATOR
+		#if !ENABLE_STORE_SIMULATION
 		[[SKPaymentQueue defaultQueue] addTransactionObserver:self];
 		#endif
 	}
@@ -87,7 +100,7 @@ static FLOStoreManager *_defaultStoreManager = nil;
 
 - (void)dealloc
 {
-	#if !TARGET_IPHONE_SIMULATOR
+	#if !ENABLE_STORE_SIMULATION
 	[[SKPaymentQueue defaultQueue] removeTransactionObserver:self];	
 	#endif
 
@@ -260,7 +273,7 @@ static FLOStoreManager *_defaultStoreManager = nil;
 
 - (NSString *)formattedPriceForFeatureId:(NSString *)featureId
 {
-    #if TARGET_IPHONE_SIMULATOR
+    #if ENABLE_STORE_SIMULATION
         return @"$0.99";
     #endif
 
@@ -316,7 +329,7 @@ static FLOStoreManager *_defaultStoreManager = nil;
 	if( featureIdList == nil  ||  featureIdList.count == 0 )
 		return;
 
-#if TARGET_IPHONE_SIMULATOR
+#if ENABLE_STORE_SIMULATION
     for( NSString *featureId in featureIdList )
         [_featureIdList addObject:featureId];	
     return;
@@ -459,7 +472,7 @@ static FLOStoreManager *_defaultStoreManager = nil;
 //
 - (void)startAsyncPurchaseOfFeature:(NSString*)featureId
 {
-	#if TARGET_IPHONE_SIMULATOR
+	#if ENABLE_STORE_SIMULATION
 		if( featureId != nil )
 		{
             if( ![_featureIdProcessingPurchaseList containsObject:featureId] )
