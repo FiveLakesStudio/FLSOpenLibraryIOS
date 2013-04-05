@@ -306,14 +306,9 @@ static FLOStoreManager *_defaultStoreManager = nil;
 
 
 
-// Given a list of feature id's.  com.todcunningham.picross.thefeatureA
-//								  com.todcunningham.picross.thefeatureB
-// The feature id is just the last part!
+// Given a list of feature id's.  thefeatureA, thefeatureB
 //
 // [[FLOStoreManager defaultManager] startFetchOfProductForFeatureList:[NSSet setWithObjects: @"thefeatureA", @"thefeatureB", nil]];
-//
-//  The callback should take a single argument of type SKProductsResponse
-//
 //
 // Sample notificatoin handler for kFeatureListReady
 //
