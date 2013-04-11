@@ -310,7 +310,7 @@ static FLOStoreManager *_defaultStoreManager = nil;
 //
 // [[FLOStoreManager defaultManager] startFetchOfProductForFeatureList:[NSSet setWithObjects: @"thefeatureA", @"thefeatureB", nil]];
 //
-// Sample notificatoin handler for kFeatureListReady
+// Sample notification handler for kFeatureListReady
 //
 //		- (void)showAppStoreProductList:(NSNotification *)notification
 //		{
